@@ -18,38 +18,20 @@
 
 			<div class="slides">
 
-
-                <section data-markdown data-background="main.png">
+                <section data-markdown>
                     <script type="text/template">
                         ## Explorando las alternativas open source a ChatGPT
                         *Una mirada al mundo de los modelos de lenguaje generativo de código abierto*
                     </script>
                 </section>
 
-                <!-- Slides are separated by three dashes (the default) -->
+                <section data-background="chatgpt-introduction.png" data-background-size="contain">
+                </section>
+
                 <section data-markdown>
                     <script type="text/template">
-                        ## Explorando las alternativas open source a ChatGPT
-                        *Una mirada al mundo de los modelos de lenguaje generativo de código abierto*
-                        ---
                         ## ¿Qué es ChatGPT?
                         Chatbot de inteligencia artificial basado en un modelo de lenguaje desarrollado por OpenAI que puede interactuar de forma conversacional y generar textos creativos.    
-                        ---
-                        ## ¿Qué es modelo del lenguaje?
-                        Manera de simular el lenguaje natural con matemáticas o computación.    
-                        ---
-                        ## Funcionamiento de un Modelo de Lenguaje
-                        ![Sample image](language-model-diagram.svg)                    
-                        ---
-                        ## GPT
-                        ...
-                        ---
-                        ## Historia
-                        ...
-                        ---
-                        ## Tamaño estimado de GPT 3.5
-                        300 mil millones de parámetros, ocupa unos 1.2 terabytes de memoria. 
-                        
                     </script>
                 </section>
 
@@ -67,86 +49,168 @@
                     </script>
                 </section>
 
-
-                <!-- Slides are separated by regexp matching newline + three dashes + newline, vertical slides identical but two dashes -->
-                <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
+                <section data-markdown>
                     <script type="text/template">
-                        ## Demo 2
-                        Slide 1.1
-
-                        --
-
-                        ## Demo 2
-                        Slide 1.2
-
+                        ## ¿Qué es modelo del lenguaje? 
+                        Manera de simular el lenguaje natural con matemáticas o computación.    
                         ---
-
-                        ## Demo 2
-                        Slide 2
-                    </script>
-                </section>
-
-                <!-- No "extra" slides, since the separator can't be matched ("---" will become horizontal rulers) -->
-                <section data-markdown data-separator="$x">
-                    <script type="text/template">
-                        A
-
+                        ## Funcionamiento de un modelo de lenguaje
+                        ![Comentado](language-model-diagram.svg) 
                         ---
-
-                        B
-
+                        # Historia
                         ---
-
-                        C
+                        ## Inicios (1950-1970)
+                        * Traducción automática
+                        * Experimento de Georgetown (1954)
+                        ---
+                        ## Años 60
+                        * SHRDLU
+                        * ELIZA
+                        ---
+                        ## Años 70 y 80
+                        * Sistemas conceptuales
+                        * Reglas escritas a mano
+                        ---
+                        ## Años 90
+                        * Aprendizaje automático
+                        * Modelos estadísticos
+                        ---
+                        ## Años 2000
+                        * Redes neuronales
+                        * Aprendizaje profundo
+                        ---
+                        ## Año 2017
+                        * Transformers
+                        ---
+                        ## Transformers
+                        ![Transformers](transformers.png) 
+                        ---
+                        ## Transformers
+                        ![Transformers](transformers-paper.png) 
+                        ---
+                        ## Inteligencia Artificial
+                        <img src="ia-meme.jpg" height="400">
+                        ---
+                        ## GPT
+                        GPT Generative Pre-trained Transformer
+                        ---
+                        ## GPT es open source hasta la versión 2 y está disponible para su prueba en plataformas como Huggingface y Google Collab.
+                        ---
+                        ![gh-gpt](gh-gpt2.png) 
+                        ---
+                        ## Probando GPT-2
+                        ![gpt2-test](gpt2-test.png) 
+                        ---
+                        Aunque ChatGPT no es open source uno de sus componentes principales  es open source, los Transformers.
+                        ---
+                        ## Tamaño estimado de GPT 3.5 
+                        300 mil millones de parámetros, ocupa unos 1.2 terabytes de memoria.
+                        ---
+                        # Modelos Open Source 
+                        ---
+                        ## LLaMA
+                        ![gh-llama](gh-llama.png) 
+                        ---
+                        ## llama.cpp
+                        ![llama.cpp](llama.cpp.png) 
+                        ---
+                        ![llama.cpp-example](llama.cpp-example.png) 
+                        ---
+                        ![llama.cpp-mobil](llama.cpp-mobil.png) 
+                        ---
+                        ## Vicuna
+                        Chatbot de código abierto entrenado mediante el ajuste fino de LLaMA en conversaciones compartidas por los usuarios recopiladas de ShareGPT.
+                        ---
+                        ![gh-fast-chat](gh-fast-chat.png)
+                        ---
+                        ![vicuna-demo](vicuna.gif)
+                        ---
+                        ## Probando Vicuna
+                        ![vicuna-demo](vicuna-demo-1.png)
+                        ---
+                        ## Koalla 
+                        Basado en LLaMA
+                        ---
+                        ## Probando Koalla
+                        ![koalla-demo](koalla-demo.png)
+                        ---
+                        ## Dolly
+                        Modelo entrenado en la infraestructura de **Databricks Machine Learning Platform**
+                        ---
+                        ## Probando Dolly
+                        ![dolly-demo](dolly-demo.png)
+                        ---
+                        ## Alpaca LORA
+                        Basado en LLaMA
+                        ---
+                        ![gh-alpaca-lora](gh-alpaca-lora.png)
+                        ---
+                        ## Alpaca Lora Serve
+                        Alpaca Lora como servicio de chatbot
+                        ---
+                        ![gh-alpaca-lora-serve](gh-alpaca-lora-serve.png)
+                        ---
+                        ## Probando Alpaca Lora Serve
+                        ![alpaca-lora-serve-demo](alpaca-lora-serve-demo.png)
+                        ---
+                        ![alpaca-lora-serve-demo-1](alpaca-lora-serve-demo-1.png)
+                        ---
+                        ![alpaca-lora-serve-demo-2](alpaca-lora-serve-demo-2.png)
+                        ---
+                        ![alpaca-lora-serve-demo-3](alpaca-lora-serve-demo-3.png)
+                        ---
+                        ## MiniGPT-4
+                        Mejora la comprensión de la visión y el lenguaje con modelos de lenguaje avanzados y grandes.
+                        ---
+                        ![gh-minigpt4](gh-minigpt4.png)
+                        ---
+                        ## MiniGPT-4 en acción
+                        ![minigpt4-demo](minigpt4-demo.png)
+                        ---
+                        ![minigpt4-demo-1](minigpt4-demo-1.png)
+                        ---
+                        ![minigpt4-demo-2](minigpt4-demo-2.png)
+                        ---
+                        ![minigpt4-demo-3](minigpt4-demo-3.png)
+                        ---
+                        ## gpt4all
+                        Ecosistema de chatbots de código abierto entrenados en una gran colección de datos limpios de asistentes, que incluyen código, historias y diálogos.
+                        ---
+                        ![gh-gpt4all](gh-gpt4all.png)
+                        ---
+                        ## Probando gpt4all
+                        ![gpt4all-demo](gpt4all-demo.png)
+                        ---
+                        ## Versión instalable
+                        ![gpt4all-installer](gpt4all-installer.png)
+                        ---
+                        ## Probando
+                        ![gpt4all-desktop](gpt4all-desktop.png)
+                        ---
+                        ## Versión web
+                        ![gpt4all-web](gpt4all-web.png)
+                        ---
+                        ## Baize
+                        Es un modelo de chat de código abierto entrenado con LoRA. Utiliza 100k diálogos generados permitiendo que ChatGPT hable consigo mismo. También utilizamos datos de Alpaca para mejorar su rendimiento.
+                        ---
+                        ![gh-baize](gh-baize.png)
+                        ---
+                        ## ChatDoctor
+                        Un modelo de chat médico ajustado en el modelo LLaMA utilizando conocimientos del dominio médico.
+                        ---
+                        ![chatdoctor-diagram](chatdoctor-diagram.png)
+                        ---
+                        ![gh-chatdoctor](gh-chatdoctor.png)
+                        ---
+                        ## Demo 
+                        llama.cpp y whisper.cpp
+                        ---
+                        <video data-autoplay src="https://user-images.githubusercontent.com/1991296/228024237-848f998c-c334-46a6-bef8-3271590da83b.mp4"></video>
+                        ---
+                        # Conclusión
+                        ---
+                        # FIN
                     </script>
-                </section>
-
-                <!-- Slide attributes -->
-                <section data-markdown>
-                    <script type="text/template">
-                        <!-- .slide: data-background="#000000" -->
-                        ## Slide attributes
-                    </script>
-                </section>
-
-                <!-- Element attributes -->
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Element attributes
-                        - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
-                        - Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
-                    </script>
-                </section>
-
-                <!-- Code -->
-                <section data-markdown>
-                    <script type="text/template">
-                        ```php [1|3-5]
-                        public function foo()
-                        {
-                            $foo = array(
-                                'bar' => 'bar'
-                            )
-                        }
-                        ```
-                    </script>
-                </section>
-
-                <!-- Images -->
-                <section data-markdown>
-                    <script type="text/template">
-                        ![Sample image](https://s3.amazonaws.com/static.slid.es/logo/v2/slides-symbol-512x512.png)
-                    </script>
-                </section>
-
-                <!-- Math -->
-                <section data-markdown>
-					## The Lorenz Equations
-					`\[\begin{aligned}
-					\dot{x} &amp; = \sigma(y-x) \\
-					\dot{y} &amp; = \rho x - y - xz \\
-					\dot{z} &amp; = -\beta z + xy
-					\end{aligned} \]`
                 </section>
 
             </div>
